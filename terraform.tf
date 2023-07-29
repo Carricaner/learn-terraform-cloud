@@ -1,19 +1,19 @@
 terraform {
 
-  cloud {
-    organization = "organization-name"
+  # cloud {
+  #   organization = "corgi-org"
 
-    workspaces {
-      name = "learn-terraform-cloud"
-    }
-  }
+  #   workspaces {
+  #     name = "learn-tfc"
+  #   }
+  # }
 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.28.0"
+      version = "~> 4.16"
     }
   }
 
-  required_version = ">= 0.14.0"
+  required_version = ">= 1.2.0"
 }
